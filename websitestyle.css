@@ -1,0 +1,116 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Style h2*/
+h2 {
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+/*Style p1*/
+p1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+  
+}
+
+/* Style tab links */
+.tablink {
+  background-color: rgb(0, 0, 255);
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: rgb(25, 25, 163);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#About {background-color: white;}
+#Audio {background-color: white;}
+#Video {background-color: white;}
+#Photo {background-color: white;}
+#Image {background-color: white;}
+
+/* Add background image to audio tab */
+#Audio {
+  h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-image: url('soundwave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*Add background image to video tab*/
+#Video {
+  h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 7px;
+    background-image: url('video\ timeline.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+  }
+}
+
+/*Add background image to photo tab*/
+#Photo {
+  h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 7px;
+    background-image: url('Starry\ Night\ Sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+  }
+}
+
+/*Add background image to image tab*/
+#Image {
+  h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 7px;
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: black;
+  }
+}
+
+/*Size images to fit within the content area*/
+img {
+  max-width: 50%;
+  height: auto;
+}
